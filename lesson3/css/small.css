@@ -1,0 +1,146 @@
+ nav {
+    background-color: #81B29A;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #F4F1DE;
+    padding: 10px;
+  }
+
+  nav a:hover {
+    color: #F4F1DE;
+  }
+
+  nav a:active {
+    color: #F2CC8F;
+  }
+
+  nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 10px;
+      overflow: hidden;
+  }
+  
+  nav ul li a {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      color: #3D405B;
+  }
+  
+  header {
+    background-color: #E07A5F;
+    color: #F4F1DE;
+    padding: 1px;
+  }
+
+  body {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    margin: 0 auto;
+  }
+
+  h2, h3 {
+      font-family: 'Imbue', Times, serif;
+  }
+  
+  h1 {
+    font-size: 2em;
+    padding: 10px;
+    text-align: center;
+  }
+
+  h2 {
+      font-size: 1.4em;
+      color: #E07A5F;
+      line-height: 0.5em;
+  }
+
+  h3 {
+      font-size: 1.3em;
+  }
+  
+  img {
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  #logo {
+      width: 200px;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    padding: 10px;
+    background-color: #F4F1DE;
+   
+  }
+  
+  p {
+    font-size: 1.1em;
+    font-weight: bold;
+    color:	#3D405B;
+  }
+
+  li {
+    color:	#3D405B;
+  }
+  
+  section {
+    background-color: #F4F1DE;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  footer {
+    background-color: #E07A5F;
+    color: #F4F1DE;
+    font-size: 1em;
+    text-align: center;
+    padding: 10px;
+  }
+
+  a {
+      color: #81B29A;
+  }
+
+ table {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .typography-samples {
+      color: #3D405B;
+  }
+
+  th {
+    background-color: #F2CC8F;
+    color: #3D405B;
+  }
+  .colors td{
+    width: 25%;
+    height: 3em;
+  }
+  
+  .primary {
+    background-color: #F4F1DE;
+  }
+  .secondary {
+    background-color: #3D405B;
+  }
+  .accent1 {
+    background-color: #E07A5F;
+  }
+  .accent2{
+    background-color: #81B29A;
+  }
+
+  .accent3 {
+    background-color: #F2CC8F;
+  }
