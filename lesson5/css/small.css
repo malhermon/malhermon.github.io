@@ -1,0 +1,232 @@
+
+
+ body {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    background-color: #F4F1DE;
+    margin: 0 auto;
+  }
+  
+  header {
+    align-items:center;
+    justify-content: center;
+    display: flex;
+    padding: 7px;
+    background-color: #E07A5F;
+    color: #F4F1DE;
+  }
+  
+  .logo-box {
+    height: 90px;
+    width: auto;
+    padding-right: 10px;
+  }
+  
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #F4F1DE;
+  }
+  
+  .title h1 {
+    font-size: 2em;
+    margin-bottom: 0px;
+  }
+
+  .motto {
+    font-style: italic;
+    font-size: 1.3em;
+    letter-spacing: 1pt;
+    padding-bottom: 10px;
+  }
+  
+h1, h2, h3 {
+    font-family: 'Imbue', Times, serif;
+}
+
+h1 {
+  font-size: 2em;
+  padding: 10px;
+  text-align: center;
+}
+
+h2 {
+    font-size: 1.4em;
+    color: #E07A5F;
+    line-height: 0.5em;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+  
+.preston-heading {
+    text-align: center;
+    color: #E07A5F;
+    font-size: 2.5em;
+  }
+  
+  .contents{
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed #3D405B;
+    padding: 15px;
+    background-color: #F2CC8F;
+    color: #3D405B;
+    font-style: italic;
+    font-size: 1.1em;
+  }
+  
+  main {
+    margin: auto;
+    padding: 15px;
+  }
+
+  
+  nav {
+    background-color: #81B29A;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #F4F1DE;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+
+  nav li {
+    display: none;
+}
+
+.nav-bar .active{
+  background-color:#E07A5F;
+}
+
+nav a {
+    display: block;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    color:#3D405B;
+    font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #F4F1DE;
+  color: #81B29A;
+}
+
+nav a:active {
+  color: #F2CC8F;
+}
+  
+  .nav-bar {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+  }
+  
+  .nav-bar li:first-child {
+      display: block;
+  }
+  
+  .menu-id li {
+      display: block;
+  }
+  
+  p {
+    font-size: 1.1em;
+    font-weight: bold;
+    color:	#3D405B;
+  }
+  
+  footer {
+    background-color: #E07A5F;
+    color: #F4F1DE;
+    font-size: 1em;
+    text-align: center;
+    padding: 10px;
+    max-width: 990px;
+    margin: 0 auto;
+  }
+  
+  a {
+    color: #F2CC8F;
+    font-weight: bold;
+}
+
+/* Week 5 */
+
+#pancackes {
+  display: none;
+  background-color: #3D405B;
+  color: #F4F1DE;
+  padding: 10px;
+}
+
+.idaho-picture {
+  width: 100%;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 15px;
+  padding: 15px;
+}
+
+#map {
+  margin: auto;
+  grid-column: 1;
+  text-align: center;
+}
+
+.contact-info {
+  grid-column: 1;
+  margin: auto;
+  text-align: center;
+}
+
+.article {
+  display: block;
+  margin: 15px;
+  padding: 15px;
+  background-color: #3D405B;
+  color: #F4F1DE;
+}
+
+.article p {
+  color: #F4F1DE;
+}
+
+.article-picture {
+  width: 100%;
+}
+
+.forecast {
+  display: none;
+}
+
+.summary {
+  position: absolute;
+  top: 0px;
+  font-size: .8em;
+	background: radial-gradient(#F4F1DE, #F4F1DE);
+	border: 1px solid #3D405B;
+	padding: 5px;
+	box-shadow: 0 0 30px #3D405B;
+  opacity: .8;
+  color: #3D405B;
+  margin: 10px;
+}
+
+.hero {
+  margin: 15px;
+  position: relative;
+}
+
+.icon {
+  width: 35px;
+  padding: 10px;
+}

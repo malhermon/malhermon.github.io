@@ -1,0 +1,107 @@
+@media only screen and (min-width: 641px) {
+
+    h1 {
+      margin-top: 0px;
+    }
+
+    .logo-box {
+      height: 120px;
+      width: auto;
+      padding-right: 10px;
+    }
+    
+    .motto {
+          letter-spacing: 1.5pt;
+          font-size: larger;
+          font-size: 1.5em;
+      }
+  
+    .nav-bar {
+          display: flex;
+    }
+    
+    .nav-bar li {
+          display: block; 
+          flex: 1 1 auto;
+    }
+    
+    .nav-bar a {
+          text-align: center;
+    }
+    
+    .nav-bar li:first-child {
+          display: none;
+    }
+
+    main {
+        max-width: 920px;
+      }
+  
+    .contents {
+          background-color: #3D405B;
+          color: #F2CC8F;
+          border: 1px dashed#F2CC8F;
+        }
+
+    /* Week 5 */
+
+    #pancakes {
+          height: 25%;
+    }
+
+    .idaho-picture{
+          width: 100%;
+    }
+
+    .forecast {
+          display: block;
+          text-align: center;
+          color: #3D405B;
+    }
+    
+    .forecast-pic {
+      width: 100px;
+    }
+    
+    #weekly-forecast {
+      margin: 0 auto;
+      width: 750px;
+      text-align: center;
+    }
+    
+
+    .article-picture {
+          float: right;
+          width: 40%; 
+          margin: 15px;
+    }
+
+    .summary {
+      position: absolute;
+      top: 25px;
+      left: 50px;
+      background: radial-gradient(#F4F1DE, #F4F1DE);
+      border: 1px solid #3D405B;
+      padding: 1rem;
+      box-shadow: 0 0 30px #3D405B;
+      opacity: .8;
+      color: #3D405B;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      color: #3D405B;
+    }
+    
+    #map {
+      grid-column: 1/2;
+      grid-row: 1;
+      height: 250px;
+    }
+    
+    .contact-info {
+      grid-column: 2/3;
+      grid-row: 1;
+    }
+  }
