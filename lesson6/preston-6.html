@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Maria Alejandra Duffy">
+  <meta name="description" content="Preston Weather Page Week 6">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+  <title>Preston Weather Page</title>
+</head>
+
+<body>
+  <div id="pancakes" style="display: block;"></div>
+    <header>
+        <img class="logo-box" src="images/weather-icon.png" alt="Texas Weather Logo">
+    
+    <section class="title">
+        <h1>Texas' Weather Place</h1>
+        <div class="motto">Preparing you for rain or shine</div>
+     </section>
+    </header>
+
+     <nav>
+         <ul class="nav-bar">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a class="active" href="preston-5.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+          </ul>
+     </nav>
+
+     <main>
+        <h2 class= "preston-heading">Preston</h2>
+        <div class="hero">
+         <picture>
+          <source class="small" srcset="images/small.jpg" media="(max-width: 641px)">
+            <source class="medium" srcset="images/medium.jpg" media="(max-width: 1000px)">
+          <img class="large" src="images/large.jpg" alt="Picture of sky">
+         </picture>
+        
+        <section class="summary">
+          <h3>Weather Summary</h3>
+          <p>Currently: Sunny</p>
+          <p>High: <span id="temperature">30</span>°F</p>
+          <p>Wind Chill: <span id="windchill"></span>°F</p>
+          <p>Humidity: 60%</p>
+          <p>Wind Speed: <span id="windspeed">10</span>mph</p>
+        </section>
+      </div>
+
+      <div class="forecast">
+				<h3>5 Day Forecast</h3>
+				<table id="weekly-forecast">
+          <thead>
+              <tr id="weekly-days">
+                  <th>Mon</th>
+                  <th>Tues</th>
+                  <th>Wed</th>
+                  <th>Thurs</th>
+                  <th>Fri</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>
+                      <img class="forecast-pic" src="images/sunny.png" alt="Monday Weather">
+                      <br>
+                      <span id="day1">68 °F</span>
+                  </td>
+                  <td>
+                      <img class="forecast-pic" src="images/sunny.png" alt="Tuesday Weather">
+                      <br>
+                      <span id="day2">65 °F</span>
+                  </td>
+                  <td>
+                      <img class="forecast-pic" src="images/partly-cloudy.png" alt="Wednesday Weather">
+                      <br>
+                      <span id="day3">55 °F</span>
+                  </td>
+                  <td>
+                      <img class="forecast-pic" src="images/partly-cloudy.png" alt="Thursday Weather">
+                      <br>
+                      <span id="day4">60 °F</span>
+                  </td>
+                  <td>
+                      <img class="forecast-pic" src="images/partly-cloudy.png" alt="Friday Weather">
+                      <br>
+                      <span id="day5">63 °F</span>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+			</div>
+
+      <div class="article">
+        <img class="article-picture" src="images/snow.jpg" alt="Snow Day">
+        <h3>Blizzard Conditions Possible in the Northeast</h3>
+        <p>A powerful nor'easter took shape off the mid-Atlantic coast on Sunday night. Forecasters say to "buckle up" as the winter storm will be a long-duration event for some areas and unload an AccuWeather Local StormMax™ of up to 36 inches. The system will lash parts of the Northeast into the middle of the week with a slew of different hazards.
+          Winter storm warnings and winter weather advisories were in effect across the Northeast as snow and ice began breaking out across the region Sunday.
+
+By early Monday morning, 2-5 inches of snow had fallen across a broad swath stretching from the southern Appalachians to eastern Pennsylvania and central New Jersey. Higher amounts were observed in the mountains of North Carolina, Virginia, West Virginia and Maryland.
+On Sunday night, New Jersey and New York City issued state of emergencies and New York City put travel restrictions in place to keep nonessential personnel off the roads.
+
+This first wave of snow was a result of a storm that swept through the Midwest and Ohio Valley over the weekend, unleashing major disruptions in places like Chicago. This storm has since been in the process of weakening.
+
+But, as AccuWeather meteorologists predicted days ago, a secondary storm was beginning to take shape off the southeastern coast of Virginia Sunday night.
+
+"The coastal storm will then become the dominant storm of the two, strengthening into a full-blown nor'easter along the Atlantic coast," AccuWeather Senior Meteorologist Danny Pydynowski said.
+
+As the two storms interact with one another, a broad area of snow will stretch from the Ohio Valley and southern Appalachians to the mid-Atlantic and New England.
+<a href="https://www.ktvb.com/article/weather/accuweather/blizzard-conditions-possible-in-the-northeast-snow-storm-weather-forecast/507-0a3617cf-0758-41f9-9fbe-fc01e24a5e7a">KTVB</a>
+        </p>
+      </div>
+
+    <div class="contact-grid">
+      <section class="contact-info">
+        <h3>Contact Information</h3>
+        <p><strong>Idaho Weather Place</strong></p>
+        <p><i style="font-size:24px" class="fa">&#xf041;</i> 30 N 1st E</p>
+        <p>Preston, ID 83263</p>
+        <p><i style="font-size:24px" class="fa">&#xf095;</i> 916-999-8888</p>
+        <p><i style="font-size:24px" class="fa">&#xf0e0;</i> info@idahoweather.com</p>
+        <a class="socialmedia" target="_blank" href="https://www.facebook.com"><img class="icon" src="images/facebook.png" alt="Facebook icon"></a>
+    <a class="socialmedia" target="_blank" href="https://www.instagram.com"><img class="icon" src="images/instagram.png" alt="Instagram icon"></a>
+    <a class="socialmedia" target="_blank" href="https://www.twitter.com"><img class="icon" src="images/twitter-logo.png" alt="Twitter icon"></a>
+      </section>
+      <iframe id="map" src="https://www.google.com/maps/embed?origin=mfe&pb=!1m3!2m1!1sPreston+Idaho!6i13"></iframe>
+      <a href="https://www.embedgooglemap.net/"></a>
+    </div>
+    </main>
+
+<footer>
+    <div>
+      &copy; <span id="currentYear"></span> | Maria Alejandra Duffy | Texas | <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+    </div>
+    <span id="currentDate"></span>
+  </footer>
+
+  <script src="javascript/menu.js"></script>
+  <script src="javascript/windchill.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+  google: {
+    families: [
+        'Roboto', 'Imbue'
+    ]
+  }
+});
+</script>
+  </body>
+  
+  </html>  
