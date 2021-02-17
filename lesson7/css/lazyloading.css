@@ -1,0 +1,19 @@
+body {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    background-color: #F4F1DE;
+    margin: 0 auto;
+  }
+
+h1 {
+  font-size: 2em;
+  padding: 10px;
+  text-align: center;
+  color: #E07A5F;
+  font-family: Times, serif;
+}
+
+main {
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+}
