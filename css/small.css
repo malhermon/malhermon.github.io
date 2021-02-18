@@ -11,12 +11,12 @@ body {
 }
 
 main a {
-    color: #81B29A;
+    color: #3E6552;
     text-decoration: none;
 }
 
 main a:hover {
-    color: #F2CC8F;
+    color: #C98518;
 }
 
 footer a {
@@ -25,13 +25,13 @@ footer a {
 
 header {
     padding: 1em;
-    background-color: #E07A5F
+    background-color: #E07A5F;
 }
 
 main {
     display: block;
     padding: 1em;
-    background-color: #F4F1DE;
+    background-color: white;
 }
 
 ul {
@@ -41,7 +41,7 @@ ul {
 h1 {
     font-size: 2em;
     margin: 0.67em 0;
-    color: #F4F1DE;
+    color: white;
     text-align: center;
     line-height: 1em;
 }
@@ -67,7 +67,7 @@ hr {
 
 footer {
     font-size: 1em;
-    background-color: #E07A5F;
+    background-color: #B5CFC3;
     text-align: center;
     padding: 1em;
 }
