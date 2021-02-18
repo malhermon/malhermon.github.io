@@ -9,8 +9,8 @@
     justify-content: center;
     display: flex;
     padding: 7px;
-    background-color: #E07A5F;
-    color: #F4F1DE;
+    background-color: #D85531;
+    color: white;
   }
   
   .logo-box {
@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #F4F1DE;
+    color: white;
   }
   
   .title h1 {
@@ -111,7 +111,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #F4F1DE;
+  background-color: white;
   color: #81B29A;
 }
 
@@ -140,8 +140,8 @@ nav a:active {
   }
   
   footer {
-    background-color: #E07A5F;
-    color: #F4F1DE;
+    background-color: #B5CFC3;
+    color: #3D405B;
     font-size: 1em;
     text-align: center;
     padding: 10px;
@@ -150,7 +150,7 @@ nav a:active {
   }
   
   a {
-    color: #F2CC8F;
+    color: #3D405B;
     font-weight: bold;
 }
 
