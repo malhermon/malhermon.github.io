@@ -133,7 +133,7 @@ nav a:active {
       display: block;
   }
   
-  p {
+  .contact-info h4{
     font-size: 1.1em;
     font-weight: bold;
     color:	#3D405B;
