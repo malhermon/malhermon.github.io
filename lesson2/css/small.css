@@ -1,10 +1,11 @@
 a {
-    color: #81B29A;
+    color: #3D405B;
+    font-weight: bold;
   }
   
   header {
-    background-color: #E07A5F;
-    color: #F4F1DE;
+    background-color: #D85531;
+    color: white;
     padding: 1em;
   }
 
@@ -21,7 +22,7 @@ a {
 
   h2, h3 {
       font-size: 1.4em;
-      color: #E07A5F;
+      color: #D85531;
       line-height: 0.5em;
   }
   
@@ -50,8 +51,8 @@ a {
   }
   
   footer {
-    background-color: #E07A5F;
-    color: #F4F1DE;
+    background-color: #B5CFC3;
+    color: #3D405B;
     font-size: 1em;
     text-align: center;
     padding: 10px;
