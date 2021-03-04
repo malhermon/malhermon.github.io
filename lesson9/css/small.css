@@ -1,0 +1,198 @@
+ body {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    background-color: #F4F1DE;
+    margin: 0 auto;
+  }
+  
+  header {
+    align-items:center;
+    justify-content: center;
+    display: flex;
+    padding: 7px;
+    background-color: #D85531;
+    color: white;
+  }
+  
+  .logo-box {
+    height: 90px;
+    width: auto;
+    padding-right: 10px;
+  }
+  
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+  
+  .title h1 {
+    font-size: 2em;
+    margin-bottom: 0px;
+  }
+
+  .motto {
+    font-style: italic;
+    font-size: 1.3em;
+    letter-spacing: 1pt;
+    padding-bottom: 10px;
+  }
+  
+h1, h2, h3 {
+    font-family: Times, serif;
+}
+
+h1 {
+  font-size: 2em;
+  padding: 10px;
+  text-align: center;
+}
+
+h2 {
+    font-size: 1.4em;
+    color: #D85531;
+    line-height: 0.5em;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+  
+.preston-heading {
+    text-align: center;
+    color: #E07A5F;
+    font-size: 2.5em;
+  }
+  
+  .contents{
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed #3D405B;
+    padding: 15px;
+    background-color: #F2CC8F;
+    color: #3D405B;
+    font-style: italic;
+    font-size: 1.1em;
+  }
+  
+  main {
+    margin: 0 auto;
+    text-align: center;
+    padding: 2em;
+  }
+
+  
+  nav {
+    background-color: #81B29A;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #F4F1DE;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+
+  nav li {
+    display: none;
+}
+
+.nav-bar .active{
+  background-color:#E07A5F;
+}
+
+nav a {
+    display: block;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    color:#3D405B;
+    font-weight: bold;
+}
+
+nav a:hover {
+  background-color: white;
+  color: #81B29A;
+}
+
+nav a:active {
+  color: #F2CC8F;
+}
+  
+  .nav-bar {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+  }
+  
+  .nav-bar li:first-child {
+      display: block;
+  }
+  
+  .menu-id li {
+      display: block;
+  }
+  
+  p {
+    font-size: 1.1em;
+    font-weight: bold;
+    color:	#3D405B;
+  }
+  
+  footer {
+    background-color: #B5CFC3;
+    color: #3D405B;
+    font-size: 1em;
+    text-align: center;
+    padding: 10px;
+    max-width: 990px;
+    margin: 0 auto;
+  }
+  
+  a {
+    color: #3D405B;
+    font-weight: bold;
+}
+
+/* Week 9*/
+
+.cards {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px; 
+  color: #3D405B;
+  font-size: 1em;
+}
+
+.cards section {
+  margin: auto;
+  border: 2px solid #3D405B;
+  border-radius: 10px;
+  background-color: white;
+  padding: 1em;
+  }
+
+
+.cards section img {
+  border-radius: 5px;
+  width: 80%;
+  height: auto;
+  padding: 10px;
+  filter: blur(0em);
+  transition: filter 1s;
+}
+
+.h2-title {
+  color:#D85531;
+  font-size: 2em;
+}
+
+.home-title {
+  padding: 10px;
+}
+
+.hero-image {
+  display: none;
+}
