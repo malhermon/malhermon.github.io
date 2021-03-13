@@ -25,7 +25,7 @@ if (day1[day] == 'Friday') {
    document.getElementById("pancakes").style.display = "none";
  }
 
-// Current Weather for Weather Summary
+// <script src="javascript/javascript.js"></script> Weather for Weather Summary
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=da923bb8ec61575a7dfe5e3106bb43c1";
 
 fetch(apiURL)
@@ -38,19 +38,6 @@ fetch(apiURL)
    document.getElementById('humidity').innerHTML = town.main.humidity;
    document.getElementById('windspeed').innerHTML = Math.round(town.wind.speed);
 });
-
-// Windchill
-const temp = document.getElementById('temp').innerHTML;
-const windspeed = document.getElementById('windspeed').innerHTML;
-
-
-let windchill = 35.74 + (0.6215 * temp) - (35.75 * Math.pow(windspeed, .16)) + (0.4275 * temp * Math.pow(windspeed, .16));
-  if (temp <= 50 && windspeed > 3) {
-     windchill = Math.round(windchill);
-  } else {
-     windchill = "N/A";
-  }
-document.getElementById('windchill').innerHTML = windchill;
 
 // 5 day forecast
 
