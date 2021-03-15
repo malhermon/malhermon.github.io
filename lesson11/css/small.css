@@ -385,9 +385,16 @@ form input.submit-button {
 
 .home-title {
   padding: 10px;
+  color: #3D405B;
 }
 
 .hero-image {
   display: none;
+}
+
+p {
+  font-size: 1.1em;
+  font-weight: bold;
+  color:	#3D405B;
 }
 
