@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Maria Alejandra Duffy">
+  <meta name="description" content="The Gallery Page">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+  <title>Weather Gallery Page</title>
+</head>
+
+<body>
+      <header>
+          <img class="logo-box" src="images/weather-icon.png" alt="Texas Weather Logo">
+      
+      <section class="title">
+          <h1>Texas' Weather Place</h1>
+          <div class="motto">Preparing you for rain or shine</div>
+       </section>
+      </header>
+  
+       <nav>
+           <ul class="nav-bar">
+              <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="preston.html">Preston</a></li>
+              <li><a href="#">Soda Springs</a></li>
+              <li><a href="#">Fish Haven</a></li>
+              <li><a href="stormcenter.html">Storm Center</a></li>
+              <li><a class="active" href="gallery.html">Gallery</a></li>
+            </ul>
+       </nav>
+
+       <main>
+        <div class="gallery">
+          <figure>
+            <img class="gallery-img" alt="Picture of clouds in the beach" src="images/placeholder2.jpg" data-src="images/weather1.jpg">
+            <figcaption>Beautiful clouds</figcaption>
+          </figure>
+          <figure>
+            <img class="gallery-img" alt="Picture of snow in a city with a school bus" src="images/placeholder2.jpg" data-src="images/weather2.jpg">
+            <figcaption>Snow in the city</figcaption>
+          </figure>
+          <figure>
+            <img class="gallery-img" alt="Picture of fog during a hike" src="images/placeholder2.jpg" data-src="images/weather3.jpg">
+            <figcaption>Fog in the mountain</figcaption>
+          </figure>
+          <figure>
+            <img class="gallery-img" alt="Picture of lightning in the countryside" src="images/placeholder2.jpg" data-src="images/weather4.jpg">
+            <figcaption>Lightning striking</figcaption>
+          </figure>
+          <figure>
+            <img class="gallery-img" alt="Picture of fog on the towers" src="images/placeholder2.jpg" data-src="images/weather5.jpg">
+            <figcaption>Fog on top of the towers</figcaption>
+          </figure>
+          <figure>
+            <img class="gallery-img" alt="Picture of a beautiful sky" src="images/placeholder2.jpg" data-src="images/weather6.jpg">
+            <figcaption>Blue skies in a colorful city</figcaption>
+          </figure>
+          <figure>
+            <img class="gallery-img" alt="Picture of clear air" src="images/placeholder2.jpg" data-src="images/weather7.jpg">
+            <figcaption>Fresh air in the mountains</figcaption>
+          </figure>
+          <figure>
+            <img class="gallery-img" alt="Picture of clouds in the city" src="images/placeholder2.jpg" data-src="images/weather8.jpg">
+            <figcaption>Clouds touching the city</figcaption>
+          </figure>
+          <figure>
+            <img class="gallery-img" alt="Picture of fog in an island" src="images/placeholder2.jpg" data-src="images/weather9.jpg">
+            <figcaption>Fog in the island</figcaption>
+          </figure>
+        </div>     
+      </main>
+    
+<footer>
+    <div>
+      &copy; <span id="currentYear"></span> | Maria Alejandra Duffy | Texas | <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+    </div>
+    <span id="currentDate"></span>
+  </footer>
+
+  <script src="javascript/gallery.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+  google: {
+    families: [
+        'Roboto', 'Imbue'
+    ]
+  }
+});
+</script>
+  </body>
+  
+  </html>  

@@ -1,0 +1,39 @@
+@media only screen and (min-width: 1008px) {
+
+
+    main {
+        text-align: center;
+    }
+
+    .article {
+        text-align: left;
+    }
+
+    /* Gallery */
+
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+  
+    .gallery figure:hover {
+        box-shadow: 0 0 20px #81B29A;
+    }
+
+    /* Homepage*/
+
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cards section {
+    display: block;
+    width: 250px;
+    padding: 1em;
+    margin: 1em;
+}
+
+.cards section img {
+    width: 90%;
+}
+    
+  }  
