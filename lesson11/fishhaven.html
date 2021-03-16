@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Maria Alejandra Duffy">
-  <meta name="description" content="Preston Weather Page Week 10">
+  <meta name="description" content="Fish Haven Weather Page">
   <link rel="shortcut icon" href="images/favicon.ico">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/small.css">
   <link rel="stylesheet" href="css/medium.css">
   <link rel="stylesheet" href="css/large.css">
-  <title>Preston Weather Page</title>
+  <title>Fish Haven Weather Page</title>
 </head>
 
 <body>
@@ -37,22 +37,22 @@
     </nav>
 
      <main>
-        <h2 class= "preston-heading">Fish Haven</h2>
+        <h2 class= "weather-heading">Fish Haven</h2>
         <div class="hero">
          <picture>
-          <source media="(max-width: 708px)" srcset="images/small.jpg">
-          <source media="(max-width: 1008px)" srcset="images/medium.jpg">
-          <img class="large" src="images/large.jpg" alt="Picture of sky">
+          <source media="(max-width: 708px)" srcset="images/fishhaven-small.jpg">
+          <source media="(max-width: 1008px)" srcset="images/fishhaven-medium.jpg">
+          <img class="large" src="images/fishhaven-large.jpg" alt="Picture of sky">
          </picture>
         
-        <section class="summary">
+         <section class="summary">
           <h3>Weather Summary</h3>
-          <p>Currently: <span id="currently"></span></p>
-          <p>High: <span id="temp"></span>°F</p>
-          <p>Wind Chill: <span id="windchill"></span>°F</p>
-          <p>Humidity: <span id="humidity"></span>%</p>
-          <p>Wind Speed: <span id="windspeed">10</span>mph</p>
-        </section>
+            <p>Currently: <span id="currently"></span></p>
+            <p>High: <span id="temp"></span>&#176;F</p>
+            <p>Wind Chill: <span id="windchill"></span></p>
+            <p>Humidity: <span id="humidity"></span>%</p>
+            <p>Wind Speed: <span id="windspeed"></span>mph</p>
+  			</section>
       </div>
 
       <div class="forecast">
@@ -90,6 +90,11 @@
           </div>
           </div>
         </div>
+
+        <section class="town-events">
+          <h3>Upcoming Town Events</h3>
+          <hr>
+        </section> 
 
       <div class="article">
         <picture>
@@ -138,7 +143,7 @@ As the two storms interact with one another, a broad area of snow will stretch f
     <span id="currentDate"></span>
   </footer>
 
-  <script src="javascript/preston.js"></script>
+  <script src="javascript/fishhaven.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script> WebFont.load({google: { families: ['Roboto', 'Imbue'] } });</script>
   </body>

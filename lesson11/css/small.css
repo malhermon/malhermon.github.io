@@ -58,7 +58,7 @@ h3 {
     font-size: 1.3em;
 }
   
-.preston-heading {
+.weather-heading {
     text-align: center;
     color: #D85531;
     font-size: 2.5em;
@@ -399,3 +399,29 @@ p {
   color:	#3D405B;
 }
 
+/* Events*/
+
+.town-events h3 {
+  color:#3e5b3d;
+  font-size: 1.5em;
+}
+
+.town-events {
+  padding: 1em;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 2em;
+  border: 3px solid #3e5b3d;
+  border-radius: 5px;
+  color:#3e5b3d;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+hr { 
+  color: #3D405B;
+  width: 80%;
+  border-style: inset;
+  border-width: 3px;
+}
