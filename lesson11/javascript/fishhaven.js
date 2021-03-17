@@ -37,6 +37,8 @@ fetch(apiURL)
   document.getElementById('humidity').innerHTML = town.main.humidity;
   document.getElementById('windspeed').innerHTML = Math.round(town.wind.speed);
 });
+
+
   
   // 5 day forecast
   
@@ -63,20 +65,6 @@ day++;
 });
 });
 
-  
-  // Windchill
-  const temp = document.getElementById('temp').innerHTML;
-  const windspeed = document.getElementById('windspeed').innerHTML;
-  
-  
-  let windchill = 35.74 + (0.6215 * temp) - (35.75 * Math.pow(windspeed, .16)) + (0.4275 * temp * Math.pow(windspeed, .16));
-    if (temp <= 50 && windspeed > 3) {
-       windchill = Math.round(windchill);
-    } else {
-       windchill = "N/A";
-    }
-  document.getElementById('windchill').innerHTML = windchill;
-  
   // Events
   
   const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';

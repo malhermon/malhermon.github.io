@@ -41,7 +41,7 @@ fetch(apiURL_weather)
         document.getElementById('temp').textContent = Math.round(temp);
         document.getElementById('windchill').textContent = Math.round(tempHigh);
         document.getElementById('humidity').textContent = jsonObject.main.humidity;
-        document.getElementById('windspeed').textContent = Math.round(wind);
+        document.getElementById('windspeed').textContent = Math.round(windspeed);
 
         //windchill
         
