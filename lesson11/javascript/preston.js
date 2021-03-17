@@ -25,18 +25,36 @@ else {
 }
 
 // Weather Summary
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=da923bb8ec61575a7dfe5e3106bb43c1";
- 
-fetch(apiURL)
- .then((response) => response.json())
- .then((town) => {
-   console.log(town);
-   let description = town.weather[0].description;
-   document.getElementById('currently').innerHTML = description.charAt(0).toUpperCase() + description.slice(1);
-   document.getElementById('temp').innerHTML = Math.round(town.main.temp);
-   document.getElementById('humidity').innerHTML = town.main.humidity;
-   document.getElementById('windspeed').innerHTML = Math.round(town.wind.speed);
-});
+const apiURL_weather = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=b1c4009595630e2651d3712160a3c1f6&units=imperial';
+
+fetch(apiURL_weather)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (jsonObject) {
+
+        let temp = jsonObject.main.temp;
+        let tempHigh = jsonObject.main.temp_max;
+        let windspeed = jsonObject.wind.speed;
+
+        document.getElementById('currently').textContent = jsonObject.weather[0].description;
+        document.getElementById('temp').textContent = Math.round(temp);
+        document.getElementById('windchill').textContent = Math.round(tempHigh);
+        document.getElementById('humidity').textContent = jsonObject.main.humidity;
+        document.getElementById('windspeed').textContent = Math.round(wind);
+
+        //windchill
+        
+        let output = "N/A"
+        if (temp <= 50 && windspeed > 3) {
+            output = Math.round(35.74 + 0.6215 * temp - 35.75 * windspeed ** 0.16 + 0.4275 * temp * windspeed ** 0.16);
+            output += " \xB0F";
+        }
+
+        document.getElementById("windchill").textContent = output;
+
+    });
+
 
 // 5 day forecast
 
@@ -62,19 +80,6 @@ fetch(apiURL_forecast)
   day++;	  
   });
 });
-
-// Windchill
-const temp = document.getElementById('temp').innerHTML;
-const windspeed = document.getElementById('windspeed').innerHTML;
-
-
-let windchill = 35.74 + (0.6215 * temp) - (35.75 * Math.pow(windspeed, .16)) + (0.4275 * temp * Math.pow(windspeed, .16));
-  if (temp <= 50 && windspeed > 3) {
-     windchill = Math.round(windchill);
-  } else {
-     windchill = "N/A";
-  }
-document.getElementById('windchill').innerHTML = windchill;
 
 // Events
 
