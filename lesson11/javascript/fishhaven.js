@@ -39,7 +39,6 @@ function toggleMenu() {
 
       document.getElementById('currently').textContent = jsonObject.weather[0].description;
       document.getElementById('temp').textContent = Math.round(temp);
-      document.getElementById('windchill').textContent = Math.round(tempHigh);
       document.getElementById('humidity').textContent = jsonObject.main.humidity;
       document.getElementById('windspeed').textContent = Math.round(windspeed);
 
