@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Maria Alejandra Duffy">
+    <meta name="description" content="Temple Home Page">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Temple Chamber of Commerce | City</title>
+  </head>
+
+  <body onLoad="showDate()">
+    <header>
+      <img class="logo" src="images/TEMPLE-logo.png" alt="Temple Logo">
+    </header>
+
+    <nav>
+      <ul class="nav-bar">
+        <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a class="active" href="city.html">CITY</a></li>
+        <li><a href="join.html">JOIN</a></li>
+        <li><a href="directory.html">DIRECTORY</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1 class="title">The City of Temple</h1>
+
+      <div class="history">
+      <img class="history-pic" src="images/temple.jpg" alt="Picture of the city of Temple">
+      <div class="history-content">
+      <h2>History</h2>
+      <p>Temple was founded in 1881 by the Gulf, Colorado, and Santa Fe Railroad. It was initially a railroad town, but it was incorporated in 1882. The town was named after Bernard Moore Temple, who was the Santa Fe Railroad official at the time, a civil engineer, and former surveyor with the Gulf, Colorado, and Santa Fe Railway Company.</p>
+      <p>Temple is known as the "Wildflower Capital of Texas." In 2019, the city had around 74,762 residents but is a growing city that has multiple museums that focus on the history and culture of the area.</p>
+      </div>
+    </div>
+
+    
+    <h2>Events</h2>
+    <div class="events">
+        <div class="event-1">
+          <img class="event-pic" src="images/easter.jpg" alt="Easter themed picture">
+        <div class="event-content">
+        <h3>Easter Celebration</h3>
+        <p class="event-date">April 2 at 10am-6pm</p>
+        <p class="event-place">The Robinson Family Farm</p>
+        <p class="event-address">3780 White Owl Ln Temple, TX 76501</p>
+        <p class="event-description">This is going to be a big celebration since the Robinson Family Farm has not had an Easter celebration in two years. Some of the fun includes the Helicopter Egg Drop, Easter Bunny Corn Cannons Live Music Farm Animals Barrel Train Photo Ops, and more. Do not forget to bring your own Easter baskets!
+        </p>
+        </div>
+      </div>
+
+      <div class="event-2">
+          <img class="event-pic" src="images/crafts.jpg" alt="Easter themed picture">
+        <div class="event-content">
+        <h3>Family Day</h3>
+        <p class="event-date">April 3 at 10am-1pm</p>
+        <p class="event-place">Temple Railroad & Heritage Museum</p>
+        <p class="event-address">315 W Avenue B Temple, TX 76501</p>
+        <p class="event-description">This is a recurring event for the entire family. Every 1st Saturday of the month, the museum makes crafts and uses different themes to educate children about different times in history. The best part? It is completely free!</p>
+      </div>
+    </div>
+
+      <div class="event-3">
+        <img class="event-pic" src="images/reptile.jpg" alt="Easter themed picture">
+      <div class="event-content">
+      <h3>HERPS Temple Exotic Reptile and Pet Show</h3>
+      <p class="event-date">April 4 at 10am-4pm</p>
+      <p class="event-place">Frank Mayborn Convention Center</p>
+      <p class="event-address">3303 N 3rd St Temple, TX 76501</p>
+      <p class="event-description">Join us on this two-day event (April 3rd-April 4th) and see reptiles, amphibians, inverts, small mammals, feeders and buy supplies for your own pets at big discounts. This is a fun event you will not want to miss. Bring your friends and families and learn more about these amazing animals.</p>
+      </div>
+    </div>
+
+     <div class="event-4">
+        <img class="event-pic" src="images/winery.jpg" alt="Easter themed picture">
+      <div class="event-content"></div>
+      <h3>Second Annual Crawfish Boil</h3>
+      <p class="event-date">April 17 at 1pm-5pm</p>
+      <p class="event-place">3 Texans Winery & Vineyard</p>
+      <p class="event-address">7536 FM Road 2409 Temple, TX 76504</p>
+      <p class="event-description">For only $5, you can enjoy all the fixings. The wine is not included and outside beverages are not allowed. Bring your own chairs for social distancing and having a good time. </p>
+      </div>
+      </div>
+  
+    </main>
+
+    <footer>
+      <div class="contact-container">
+        <section class="contact-info">
+          <h2>Contact Information</h2>
+          <p><strong>Temple Chamber of Commerce</strong></P>
+          <P>201 Santa Fe Way, Suite 105 | Temple TX 76501</P>
+          <P>254-773-2150</p>
+          <p>Business Hours: Monday-Friday, 8am-5pm</p> 
+          <div id="currentDate" class="date-container"></div>
+      <a class="socialmedia" target="_blank" href="https://www.facebook.com"><img class="icon" src="images/facebook.png" alt="Facebook icon"></a>
+      <a class="socialmedia" target="_blank" href="https://www.instagram.com"><img class="icon" src="images/instagram.png" alt="Instagram icon"></a>
+      <a class="socialmedia" target="_blank" href="https://www.twitter.com"><img class="icon" src="images/twitter.png" alt="Twitter icon"></a>
+    </section>
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3416.4996739884323!2d-97.34677218564073!3d31.095841375094306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86456c8712852dc3%3A0xc80c8941eb6033ef!2sTemple%20Chamber%20of%20Commerce!5e0!3m2!1sen!2sus!4v1616977545371!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </footer>
+  
+      <script src="javascript/home.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+      <script src="javascript/font.js"></script>
+    </body>
+  </html>

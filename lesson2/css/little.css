@@ -1,0 +1,427 @@
+body {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    background-color: #F4F1DE;
+    margin: 0 auto;
+  }
+  
+  header {
+    align-items:center;
+    justify-content: center;
+    display: flex;
+    padding: 7px;
+    background-color: #D85531;
+    color: white;
+  }
+  
+  .logo-box {
+    height: 90px;
+    width: auto;
+    padding-right: 10px;
+  }
+  
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+  
+  .title h1 {
+    font-size: 2em;
+    margin-bottom: 0px;
+  }
+
+  .motto {
+    font-style: italic;
+    font-size: 1.3em;
+    letter-spacing: 1pt;
+    padding-bottom: 10px;
+  }
+  
+h1, h2, h3 {
+    font-family: Times, serif;
+}
+
+h1 {
+  font-size: 2em;
+  padding: 10px;
+  text-align: center;
+}
+
+h2 {
+    font-size: 1.4em;
+    color: #D85531;
+    line-height: 0.5em;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+  
+.weather-heading {
+    text-align: center;
+    color: #D85531;
+    font-size: 2.5em;
+  }
+  
+  .contents{
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed #3D405B;
+    padding: 15px;
+    background-color: #F2CC8F;
+    color: #3D405B;
+    font-style: italic;
+    font-size: 1.1em;
+  }
+  
+  main {
+    margin: 0 auto;
+    text-align: center;
+    padding: 2em;
+  }
+
+  
+  nav {
+    background-color: #81B29A;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #F4F1DE;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+
+  nav li {
+    display: none;
+}
+
+.nav-bar .active{
+  background-color:#E07A5F;
+}
+
+nav a {
+    display: block;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    color:#3D405B;
+    font-weight: bold;
+}
+
+nav a:hover {
+  background-color: white;
+  color: #81B29A;
+}
+
+nav a:active {
+  color: #F2CC8F;
+}
+  
+  .nav-bar {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+  }
+  
+  .nav-bar li:first-child {
+      display: block;
+  }
+  
+  .menu-id li {
+      display: block;
+  }
+  
+  .contact-info h4{
+    font-size: 1.1em;
+    font-weight: bold;
+    color:	#3D405B;
+  }
+  
+  footer {
+    background-color: #B5CFC3;
+    color: #3D405B;
+    font-size: 1em;
+    text-align: center;
+    padding: 10px;
+    max-width: 990px;
+    margin: 0 auto;
+  }
+
+  footer a {
+    font-weight: bold;
+    color: #3D405B;
+  }
+  
+  .article a {
+    color: #F2CC8F;
+    font-weight: bold;
+}
+
+/* Week 5 */
+
+#pancackes {
+  display: none;
+  background-color: #3D405B;
+  color: #F4F1DE;
+  padding: 10px;
+}
+
+.idaho-picture {
+  width: 100%;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 15px;
+  padding: 15px;
+}
+
+#map {
+  margin: auto;
+  grid-column: 1;
+  text-align: center;
+  max-width: 50%;
+}
+
+.contact-info {
+  grid-column: 1;
+  margin: auto;
+  text-align: center;
+}
+
+.article {
+  display: block;
+  margin: 15px;
+  padding: 15px;
+  background-color: #3D405B;
+  color: #F4F1DE;
+}
+
+.article p {
+  color: #F4F1DE;
+  font-weight: normal;
+}
+
+.article-picture {
+  width: 100%;
+}
+
+.summary {
+  position: absolute;
+  top: 0px;
+  font-size: .8em;
+	background: radial-gradient(#F4F1DE, #F4F1DE);
+	border: 1px solid #3D405B;
+	padding: 5px;
+	box-shadow: 0 0 30px #3D405B;
+  opacity: .8;
+  color: #3D405B;
+  margin: 2.5em;
+}
+
+.hero {
+  margin: 15px;
+  position: relative;
+}
+
+.icon {
+  width: 35px;
+  padding: 10px;
+}
+
+/* Gallery */
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 25px;
+}
+
+.gallery figure {
+  margin: 0;
+  padding: 0;
+}
+
+.gallery figcaption {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 1.2em;
+  color: #3D405B;
+  text-align: center;
+}
+
+.gallery-img {
+  width: 100%;
+}
+
+/* Preston */
+
+#weekly-forecast {
+  display: none;
+} 
+
+.forecast h3 {
+  display: none;
+}
+
+#day1, #day2, #day3, #day4, #day5 {
+  color:#3D405B;
+ }
+
+ #temp1, #temp2, #temp3, #temp4, #temp5 {
+  color:#3D405B;
+}
+
+/* Storm center */
+
+.thanks {
+  padding: 100px;
+  margin: 20px;
+  border: 2px solid #3D405B;
+}
+
+form {
+  color: #3D405B;
+  font-size: 1.1em;
+}
+
+form fieldset {
+  margin: 3em;
+  border: 2px solid #3D405B;
+  border-radius: 8px;
+  padding: 2em;
+}
+
+form legend {
+  color: #D85531;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+form label.top, form label.info, form div {
+  display: block;
+  padding-bottom: 15px;
+}
+
+form label.info input:required {
+  border-left: 7px #D85531 solid;
+ 
+}
+
+form label.info input:required:valid {
+  border-left: 7px #81B29A solid;
+}
+
+form label.top input, form label.info input, form label.storm select {
+  display: block;
+  border: solid 1px #3D405B;
+  border-radius: 4px;
+  padding: 0.5em;
+  color: #3D405B;
+  width: 100%;
+  background-color: white;
+  max-width: 800px;
+}
+
+form label.radios {
+  display: block;
+  padding-top: 1em;
+}
+
+form label.storm {
+  display: block;
+  padding: .75rem 0;
+  
+}
+
+form input.submit-button {
+  border: none;
+  background-color: #81B29A;
+  color: white;
+  font-size: 1.3em;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 0 2em 5%;
+  width: 96%;
+  max-width: 15em;
+}
+
+/* Homepage*/
+
+.cards {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px; 
+  color: #3D405B;
+  font-size: 1em;
+}
+
+.cards section {
+  margin: auto;
+  border: 2px solid #3D405B;
+  border-radius: 10px;
+  background-color: white;
+  padding: 1em;
+  }
+
+
+.cards section img {
+  border-radius: 5px;
+  width: 80%;
+  height: auto;
+  padding: 10px;
+  filter: blur(0em);
+  transition: filter 1s;
+}
+
+.h2-title {
+  color:#D85531;
+  font-size: 2em;
+}
+
+.home-title {
+  padding: 10px;
+  color: #3D405B;
+}
+
+.hero-image {
+  display: none;
+}
+
+p {
+  font-size: 1.1em;
+  font-weight: bold;
+  color:	#3D405B;
+}
+
+/* Events*/
+
+.town-events h3 {
+  color:#3e5b3d;
+  font-size: 1.5em;
+}
+
+.town-events {
+  padding: 1em;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 2em;
+  border: 3px solid #3e5b3d;
+  border-radius: 5px;
+  color:#3e5b3d;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+hr { 
+  color: #3D405B;
+  width: 80%;
+  border-style: inset;
+  border-width: 3px;
+}

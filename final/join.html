@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Maria Alejandra Duffy">
+    <meta name="description" content="Temple Home Page">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Temple Chamber of Commerce | Join</title>
+  </head>
+
+  <body onLoad="showDate()">
+    <header>
+      <img class="logo" src="images/TEMPLE-logo.png" alt="Temple Logo">
+    </header>
+
+    <nav>
+      <ul class="nav-bar">
+        <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="city.html">CITY</a></li>
+        <li><a class="active" href="join.html">JOIN</a></li>
+        <li><a href="directory.html">DIRECTORY</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <main>
+    <h1 class="title">Membership</h1>
+    <div class="membership-description">
+    <p>With over 1,100 voluntary members who offer their expertise and invest their time and money into improving our community, economy, and cultural well-being; the Temple Chamber of Commerce is excited to receive more volunteers.</p>
+    <p>Any business that is interesting in developing in our area is eligible because we know they bring more jobs, more money, and a better quality of life for the Temple residents. The dues structure allows for owners of the smallest businesses to become members.</p>
+  </div>
+    <h2>Benefits</h2>
+    <div class="benefits">
+    <div class="benefit-1">
+    <img class="join-membership-pic" src="images/people.jpg" alt="Picture of women smiling">
+    <h3>Network</h3>
+    <ul>
+      <li>Meet new people and businesses.</li>
+      <li>Opportunity to market your own products.</li>
+      <li>Get new reviews and improve visibility.</li>
+      <li>Increase exposure.</li>
+    </ul>
+    </div>
+
+    <div class="benefit-2">
+      <img class="join-membership-pic" src="images/community.jpg" alt="Picture of people at a restaurant">
+      <h3>Invest in your region</h3>
+      <ul>
+        <li>Improve the quality of life of the community.</li>
+        <li>Address the opportunities and challenges of the city.</li>
+        <li>Help creating new jobs for the people.</li>
+        <li>Safeguard our municipal resources.</li>
+      </ul>
+      </div>
+
+      <div class="benefit-3">
+        <img class="join-membership-pic" src="images/grow-business.jpg" alt="Picture of business workers">
+        <h3>Grow your business</h3>
+        <ul>
+          <li>Learn from other experts.</li>
+          <li>Opportunities for mentorship programs.</li>
+          <li>Learn strategies to resolve common issues.</li>
+          <li>Strengthen your business and employees.</li>
+        </ul>
+        </div>
+      </div>
+
+      <div class="membership-form">
+        <form action="confirmation.html">
+          <div class="wrapper">
+            <h2>Membership Form</h2>
+            <fieldset>
+            <label for="full-name">First and last name:</label>
+            <input id="full-name" type="text" placeholder="Jane Doe" name="full-name" required>
+
+            <label for="title">Title:</label>
+            <input id="title" type="text" placeholder="Jr." name="title">
+
+            <label for="email">Email:</label>
+            <input id="email" type="email" placeholder="email@email.com" name="email" required>
+
+            <label for="cellphone">Cellphone:</label>
+            <input id="cellphone" type="tel" placeholder="123-456-7891" name="cellphone">
+
+            <label for="business-name">Business name:</label>
+            <input id="business-name" type="text" placeholder="Happy Bunnies" name="business-ame" required>
+
+            <label for="business-address">Business adress:</label>
+            <input id= "business-address" type="text" placeholder="123 Temple Ave" name="business-address">
+
+            <label for="business-website">Business website:</label>
+            <input id= "business-website" type="text" placeholder="temple.com" name="business-website">
+
+            <label for="business-description">Business description:</label>
+            <input id="business-description" type="text" placeholder="What your business is about" name="business-description">
+
+            <label for="levels">Membership level:</label>
+            <select name="levels" id="levels" multiple>
+              <option value="non-profit">Non-profit: $100</option>
+              <option value="bronze">Bronze: $200</option>
+              <option value="silver">Silver: $400</option>
+              <option value="gold">Gold: $1000</option>
+            </select>
+            <button type="submit" class="signup">Join</button>
+          </div>
+        </fieldset>
+        </form>
+      </div>
+
+  </main>
+
+    <footer>
+      <div class="contact-container">
+        <section class="contact-info">
+          <h2>Contact Information</h2>
+          <p><strong>Temple Chamber of Commerce</strong></P>
+          <P>201 Santa Fe Way, Suite 105 | Temple TX 76501</P>
+          <P>254-773-2150</p>
+          <p>Business Hours: Monday-Friday, 8am-5pm</p> 
+          <div id="currentDate" class="date-container"></div>
+      <a class="socialmedia" target="_blank" href="https://www.facebook.com"><img class="icon" src="images/facebook.png" alt="Facebook icon"></a>
+      <a class="socialmedia" target="_blank" href="https://www.instagram.com"><img class="icon" src="images/instagram.png" alt="Instagram icon"></a>
+      <a class="socialmedia" target="_blank" href="https://www.twitter.com"><img class="icon" src="images/twitter.png" alt="Twitter icon"></a>
+    </section>
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3416.4996739884323!2d-97.34677218564073!3d31.095841375094306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86456c8712852dc3%3A0xc80c8941eb6033ef!2sTemple%20Chamber%20of%20Commerce!5e0!3m2!1sen!2sus!4v1616977545371!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </footer>
+  
+      <script src="javascript/home.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+      <script src="javascript/font.js"></script>
+    </body>
+  </html>
