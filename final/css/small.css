@@ -126,6 +126,7 @@ body {
   .home-membership-section {
     background: white;
     border: 1px solid #FC9E4F;
+    padding: 1em;
   }
 
   .business-container h2, .business-container h3 {

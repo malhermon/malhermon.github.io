@@ -37,3 +37,14 @@ fetch("https://api.openweathermap.org/data/2.5/weather?lat=31.105862&lon=-97.353
   document.getElementById('humidity').textContent = obj.main.humidity + " %";
 
 });
+
+// Three Day Forecast
+fetch("https://api.openweathermap.org/data/2.5/forecast?lat=31.105862&lon=-97.353287&appid=d3860fdc94ef1e7570d2672151dd4ef7")
+
+.then(function (response) {
+  return response.json();
+})
+
+.then(function (forecastObj) {
+
+});
