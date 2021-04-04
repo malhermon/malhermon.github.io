@@ -4,9 +4,73 @@
         margin: auto;
     }
 
-    /* City Page */
+     /* Homepage*/
+
+
+    .business-container {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .home-business1 {
+      grid-column: 1/2;
+    }
+
+    .home-business2 {
+      grid-column: 2/3;
+    }
+
+    .home-business3 {
+      grid-column: 3/4;
+    }
+
+    .business-title {
+      grid-column: 1/4;
+    }
+
+    /* Directory*/
 
    
+    .wrapper {
+      width: 800px;
+      margin: 100px auto;
+     }
+     
+     .links {
+       margin-bottom: 1em;
+       padding: 15px;
+       border-radius: 3px;
+     }
+
+     .links ul {
+       display: flex;
+       justify-content: center;
+     }
+
+     .links ul li {
+       margin: 0 15px;
+       font-weight: 700;
+       text-transform: uppercase;
+       font-size: 20px;
+       letter-spacing: 3px;
+       cursor: pointer;
+     }
+
+     .links ul li:hover {
+       color: green;
+     }
+
+     .links ul li:active {
+       color: yellow;
+     }
+
+     .list-view .view-item {
+       border: 1px solid black;
+       margin: 10px;
+       padding: 10px;
+       align-items: center;
+     }
+
+  
     
     /* Contact Page */
 

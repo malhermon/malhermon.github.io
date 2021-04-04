@@ -15,7 +15,7 @@
 
   <body onLoad="showDate()">
     <header>
-      <img class="logo" src="images/TEMPLE-logo.png" alt="Temple Logo">
+      <img class="site-logo" src="images/TEMPLE-logo.png" alt="Temple Logo">
     </header>
 
     <nav>
@@ -29,63 +29,69 @@
       </ul>
     </nav>
 
-    <main>
+    <main class="home-main">
       
       <h1 class="title">Welcome</h1>
       <img class="home-pic" src="images/temple-home.jpg" alt="Picture of People Walking">
     
-      <section class="temperature-container">
-        <h2>Today's Temperature</h2>
-        <ul>
-          <li>City: <span class="city"></span></li>
-          <li>Temp: <span class="temp"></span></li>
-          <li>Condition: <span class="condition"></span></li>
-          <li>Humidity: <span class="humidity"></span></li>
-        </ul>
-      </section>
 
       <section class="home-about">
         <h2>Our Purpose</h2>
         <p>Our non-profit organization has over 1,100 voluntary members and it was founded in 1907. Our members are locals of the Temple area.  We appreciate them because it is through their donations and contributions that we are able to keep growing. In exchange, we assist and motivate our members by offering them programs and services that help their businesses grow. </p>
       </section>
 
+      
+      <div id="temperature-container">
+        <h2>Today's Temperature</h2>
+        <ul>
+          <li>City: <span id="city"></span></li>
+          <li>Temp: <span id="temp"></span></li>
+          <li>Condition: <span id="condition"></span></li>
+          <li>Humidity: <span id="humidity"></span></li>
+        </ul>
+      </div>
+
       <section class="forecast">
         <h2>Three-Day Forecast</h2>
 
       </section>
-
-      <section class="home-membership">
-        <h2>Membership</h2>
+      
+      <section class="home-membership-section">
+      <h2>Membership</h2>
+      <div class="home-membership">
         <img class="home-membership-pic" src="images/woman.jpg" alt="Picture of a woman smiling">
+        <div class="right-membership">
         <p>We will never say no to more help. If you would like to enjoy our benefits and help making Temple a better place, then sign up and become a member! </p>
         <button class="sign-up" type="submit"></button>
+        </div>
+        </div>
       </section>
 
-      <section class="home-businesses">
+      <section class="business-container">
+
+        <div class="business-title">
         <h2>Businesses We Support</h2>
         <p>We love these businesses because they bring joy to our locals. Check them out!</p>
+        </div>
 
-        <div class="business-container">
-          <div class="business1">
-          <h2>Treno Pizzeria and Taproom</h2>
-          <p>If you want to try artisan pies, 36 self-pour taps, saldas, appetizers, and more; then Treno is the place for you. Delicious food for the entire family. </p>
+          <div class="home-business1">
+          <h3>Treno Pizzeria and Taproom</h3>
+          <p>If you want to try artisan pies, 36 self-pour taps, saldas, appetizers, and more; then Treno is the place for you. Delicious food for the entire family at an afforfable price. The best pizza in Temple. </p>
           </div>
 
-          <div class="business2">
-            <h2>Arthur Murray</h2>
+          <div class="home-business2">
+            <h3>Arthur Murray Dance Centers</h3>
             <p>The Arthur Murray Dance Centers provide dance lessons for beginners. This is a great option if you want to learn to dance for a special event, a hobby, or just to have some fun with your partner.</p>
             </div>
 
-          <div class="business3">
-            <h2>Armstrong Chiropractic</h2>
+          <div class="home-business3">
+            <h3>Armstrong Chiropractic</h3>
             <p>The best care at the best price. Armstrong Chiropractic offers $45 off to new patients, which means that your entire family can enjoy effective care with this exclusive offer.</p>
             </div>
-        </div>
       </section>
 
       <section class="events">
         <h2>Upcoming Events</h2>
-
       </section>
     </main>
 

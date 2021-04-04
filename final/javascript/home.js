@@ -24,25 +24,16 @@ myDate.innerText= "Today: " +dayarray[day]+ " " + daym+ " " +montharray[month]+ 
 showDate();
 
 // Weather Summary
-
 fetch("https://api.openweathermap.org/data/2.5/weather?lat=31.105862&lon=-97.353287&appid=d3860fdc94ef1e7570d2672151dd4ef7")
 
 .then(function (response) {
-    return response.json();
+  return response.json();
 })
+.then(function (obj) {
 
- .then(function (data) {
-  const name = data.name;
-  const description = data.weather.description[0];
-  const temp = data.main.temp;
-  const humidity = data.main.humidity;
+  document.getElementById('city').textContent = obj.name;
+  document.getElementById('condition').textContent = obj.weather[0].description;
+  document.getElementById('temp').textContent = obj.main.temp + " °F";
+  document.getElementById('humidity').textContent = obj.main.humidity + " %";
 
-    document.getElementsByClassName("city").innerText = "City: " + name;
-    document.getElementsByClassName("temp").innerText = "Temp: " + temp + "°F";
-    document.getElementsByClassName("condition").innerText = "Condition: " + description;
-    document.getElementsByClassName("humidity").innerText = "Humidity: " + humidity + "%";
 });
-
-
-// Weather Forecast
-

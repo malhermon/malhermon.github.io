@@ -79,48 +79,67 @@ h4 {
     font-size: 1.4em;
 }
 
+p {
+  font-size: 1.2em;
+  color: #020122;
+  text-align: left;
+}
 
-/* Homepage */
-
-.logo {
-    width: 25%;
+main {
+  margin: 0 auto;
+  margin-top: 1em;
+  padding: 1em;
 }
 
 body {
-    font-family: 'Roboto', Helvetica, sans-serif;
-    background-color: #F2F3AE;
-    color: #020122;
-    margin: 0 auto;
-  }
+  font-family: 'Roboto', Helvetica, sans-serif;
+  background-color: #F2F3AE;
+  color: #020122;
+  margin: 0 auto;
+}
+
+/* Homepage */
+
+.site-logo {
+    width: 25%;
+}
 
   header {
     padding: 0.5em;
   }
 
+  .home-membership {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  .home-membership-pic {
+    width: 100%;
+    margin: 0 auto;
+}
+
   .home-pic {
       width: 100%;
   }
 
-  p {
-    font-size: 1.2em;
-    color: #020122;
-    text-align: left;
+  .home-membership-section {
+    background: white;
+    border: 1px solid #FC9E4F;
   }
 
-  main {
-    margin: 0 auto;
-    margin-top: 1em;
-  }
-  
-  .home-membership-pic {
-      width: 50%;
+  .business-container h2, .business-container h3 {
+    color: white;
+    text-align: center;
   }
 
-  .business-container h2, .business-container p {
+  .business-container p {
     color: white;
   }
 
   .business-container {
+    display: grid;
+    grid-template-columns: 1fr;
     background-color: #020122;
     color: white;
     padding: 1em;
@@ -146,14 +165,26 @@ body {
     font-size: 1em;
   }
 
-  .temperature-container {
+  #temperature-container {
     font-size: 1em;
-    background: white;
-    border: 1px solid #FC9E4F;
-    padding: 5px;
-    margin: 1em;
+    border: solid 2px #020122;
+    border-radius: 5px;
+    margin: 0 auto;
     color: #020122;
+    width: 90%;
   }
+
+  #temperature-container li {
+    list-style: none;
+    color: #020122;
+    text-align: center;
+  }
+
+  .icon {
+    width: 35px;
+    padding: 10px;
+  }
+  
   
   /* Footer */
 
@@ -287,7 +318,7 @@ img {
 .membership-description {
   border: solid 2px #020122;
   border-radius: 5px;
-  padding: 10px;
+  padding: 20px;
 }
 
 fieldset {
@@ -322,148 +353,15 @@ button {
   background-color: #EDD382;
 }
 
-/* Week 5 */
+/* Directory Page */
 
-#pancackes {
-  display: none;
-  background-color: #3D405B;
-  color: #F4F1DE;
-  padding: 10px;
-}
-
-.idaho-picture {
-  width: 100%;
-}
-
-
-
-
-
-.article {
-  display: block;
-  margin: 15px;
-  padding: 15px;
-  background-color: #3D405B;
-  color: #F4F1DE;
-}
-
-.article p {
-  color: #F4F1DE;
-  font-weight: normal;
-}
-
-.article-picture {
-  width: 100%;
-}
-
-
-
-.hero {
-  margin: 15px;
-  position: relative;
-}
-
-.icon {
-  width: 35px;
-  padding: 10px;
-}
-
-
-/* Preston */
-
-#weekly-forecast {
-  display: none;
-} 
-
-.forecast h3 {
-  display: none;
-}
-
-#day1, #day2, #day3, #day4, #day5 {
-  color:#3D405B;
- }
-
- #temp1, #temp2, #temp3, #temp4, #temp5 {
-  color:#3D405B;
-}
-
-/* Storm center */
-
-.thanks {
-  padding: 100px;
-  margin: 20px;
-  border: 2px solid #3D405B;
-}
-
-
-/* Homepage*/
-
-.cards {
-  text-align: center;
+#directoryid {
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 10px; 
-  color: #3D405B;
-  font-size: 1em;
-}
-
-.cards section {
-  margin: auto;
-  border: 2px solid #3D405B;
-  border-radius: 10px;
-  background-color: white;
   padding: 1em;
-  }
-
-
-.cards section img {
-  border-radius: 5px;
-  width: 80%;
-  height: auto;
-  padding: 10px;
-  filter: blur(0em);
-  transition: filter 1s;
 }
 
-.h2-title {
-  color:#D85531;
-  font-size: 2em;
-}
-
-.home-title {
-  padding: 10px;
-  color: #3D405B;
-}
-
-.hero-image {
-  display: none;
-}
-
-
-
-/* Events*/
-
-.town-events h3 {
-  color:#3e5b3d;
-  font-size: 1.5em;
-}
-
-.town-events {
-  padding: 1em;
-  width: 50%;
-  text-align: center;
-  margin: auto;
-  margin-bottom: 2em;
-  border: 3px solid #3e5b3d;
-  border-radius: 5px;
-  color:#3e5b3d;
-  font-family: 'Roboto', Helvetica, sans-serif;
-  font-size: 1em;
-}
-
-hr { 
-  color: #3D405B;
-  width: 80%;
-  border-style: inset;
-  border-width: 3px;
+.logo {
+  width: 20%;
 }
