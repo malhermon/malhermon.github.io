@@ -48,3 +48,6 @@ fetch("https://api.openweathermap.org/data/2.5/forecast?lat=31.105862&lon=-97.35
 .then(function (forecastObj) {
 
 });
+
+// Home Events
+

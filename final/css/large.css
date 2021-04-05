@@ -27,13 +27,31 @@
       grid-column: 1/4;
     }
 
-    /* Directory*/
+    /* City Page */
+
+    .history {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .history-pic {
+      grid-column: 1/2;
+      width: 100%;
+    }
+
+    .history-content {
+      grid-column: 2/3;
+    }
 
    
-    .wrapper {
-      width: 800px;
-      margin: 100px auto;
-     }
+    .fun {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+
+    /* Directory*/
+
      
      .links {
        margin-bottom: 1em;

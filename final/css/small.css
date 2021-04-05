@@ -1,5 +1,11 @@
 /* Navigation */
 
+a {
+  color: #FC9E4F;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 nav {
     background-color: #020122;
     text-align: center;
@@ -111,7 +117,6 @@ body {
   .home-membership {
     display:grid;
     grid-template-columns: 1fr;
-    grid-gap: 10px;
   }
 
   .home-membership-pic {
@@ -125,7 +130,8 @@ body {
 
   .home-membership-section {
     background: white;
-    border: 1px solid #FC9E4F;
+    border: 3px solid white;
+    border-radius: 5px;
     padding: 1em;
   }
 
@@ -144,6 +150,7 @@ body {
     background-color: #020122;
     color: white;
     padding: 1em;
+    grid-gap: 1em;
   }
 
   .contact-container {
@@ -168,11 +175,12 @@ body {
 
   #temperature-container {
     font-size: 1em;
-    border: solid 2px #020122;
+    border: solid 3px #020122;
     border-radius: 5px;
-    margin: 0 auto;
+    margin: 4em auto;
     color: #020122;
     width: 90%;
+    padding: 0 0 1em;
   }
 
   #temperature-container li {
@@ -191,6 +199,9 @@ body {
 
   footer {
     background-color: #FC9E4F;
+    border: 2px solid #FC9E4F;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     font-size: 1em;
     text-align: center;
     padding: 10px;
@@ -242,7 +253,7 @@ legend {
 }
 
 input, select {
-  border: 1px solid #020122;
+  border: 2px solid #020122;
   padding: 10px;
   border-radius: 3px;
   width: 95%;
@@ -271,7 +282,7 @@ button[type="submit"] {
   color: #020122;
 }
 
-/* City */
+/* City Page*/
 
 img {
   width: 100%;
@@ -299,6 +310,19 @@ img {
   font-weight: normal;
 }
 
+.fun {
+  margin: 1em 0 2em;
+}
+
+.fun-left {
+  padding: 10px;
+  background-color: white;
+}
+
+.fun-pic {
+  width: 100%;
+}
+
 /* Join Page */
 
 .benefit-1 {
@@ -317,17 +341,18 @@ img {
 }
 
 .membership-description {
-  border: solid 2px #020122;
+  border: solid 3px #020122;
   border-radius: 5px;
   padding: 20px;
+  font-weight: 500;
 }
 
 fieldset {
-  border: 2px solid #020122;
+  border: 3px solid #020122;
   border-radius: 5px;
   font-size: 1em;
-  margin: 1em;
   color: #020122;
+  padding: 1.5em;
 }
 
 button:hover {
@@ -352,6 +377,10 @@ button {
 
 .membership-form :required {
   background-color: #EDD382;
+}
+
+.membership-form {
+  padding: 1em 0 1em;
 }
 
 /* Directory Page */

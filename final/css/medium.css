@@ -39,6 +39,9 @@
 
      .business-container {
       grid-template-columns: 1fr 1fr;
+      margin: 1em 0 auto;
+      border: 1px solid;
+      border-radius: 5px;
     }
 
     .business-title p {
@@ -74,6 +77,10 @@
 
     .right-membership {
       grid-column: 2/3
+    }
+
+    .right-membership p {
+      padding-top: 3em;
     }
 
     #temperature-container {
@@ -135,20 +142,6 @@
     }
 
     /* City Page */
-
-    .history {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-
-    .history-pic {
-      grid-column: 1/2;
-      width: 100%;
-    }
-
-    .history-content {
-      grid-column: 2/3;
-    }
 
     .events {
       display: grid;
