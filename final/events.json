@@ -1,10 +1,10 @@
 {
-    "eventsJson": [
+    "homeEvents": [
 
-    "April 14: Two Minutes to Midnight and the Architecture of Armageddon",
-    "May 1: Family Day at Temple Railroad & Heritage Museum",
-    "May 7: First Friday "
-    
-]
+{
+    "firstEvent": "April 14: Two Minutes to Midnight and the Architecture of Armageddon",
+    "secondEvent": "May 1: Family Day at Temple Railroad & Heritage Museum",
+    "thirdEvent": "May 7: First Friday "
+}]
 
 }

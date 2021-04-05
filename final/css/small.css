@@ -173,7 +173,7 @@ body {
     font-size: 1em;
   }
 
-  #temperature-container {
+  #temperature-container, #home-events {
     font-size: 1em;
     border: solid 3px #020122;
     border-radius: 5px;
@@ -181,6 +181,10 @@ body {
     color: #020122;
     width: 90%;
     padding: 0 0 1em;
+  }
+
+  #home-events p {
+    text-align: center;
   }
 
   #temperature-container li {

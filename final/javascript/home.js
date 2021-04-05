@@ -51,3 +51,24 @@ fetch("https://api.openweathermap.org/data/2.5/forecast?lat=31.105862&lon=-97.35
 
 // Home Events
 
+var events = {
+  "homeEvents": [
+{
+  "name": "Upcoming Events",
+  "firstEvent": "April 14: Two Minutes to Midnight and the Architecture of Armageddon",
+  "secondEvent": "May 1: Family Day at Temple Railroad & Heritage Museum",
+  "thirdEvent": "May 7: First Friday "
+}]
+
+}
+
+var getId = document.getElementById('home-events');
+for(var i=0;i<events.homeEvents.length;i++) {
+  
+  getId.innerHTML += '<h2 class="name">' +events.homeEvents[i].name + '</h2>';
+  getId.innerHTML += '<p class="address">' +events.homeEvents[i].firstEvent + '</p>';
+  getId.innerHTML += '<p class="member">' +events.homeEvents[i].secondEvent + '</p>';
+  getId.innerHTML += '<p class="phone">' +events.homeEvents[i].thirdEvent + '</p>';
+}
+
+// from list to grid
