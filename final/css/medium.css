@@ -87,6 +87,33 @@
       width: 70%;
     }
 
+    /* Weekly Forecast */
+
+    #forecast {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      text-align: center;
+      color: #020122;
+      gap: 1em;
+      margin: 2em;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    #forecast p {
+      text-align: center;
+      font-size: 1em;
+    }
+
+    #icon1, #icon2, #icon3 {
+      width: 30%;
+    }
+
+    #days {
+      width: 30%;
+    }
+
+
 
      /* Contact Information */
 
@@ -178,5 +205,35 @@
       height: 220px;
     }
 /* Directory Page */
-    
+
+#directoryWrapper {
+  margin: 10px;
+}
+
+#directoryContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+}
+
+#directoryContent h3 {
+  padding-top: 1em;
+}
+
+#directoryContent .directory-address-grid {
+  padding-top: -2em;
+}
+
+#directoryContent p {
+  grid-column: 1/2;
+}
+
+#directoryContent .logo {
+  grid-column: 2/3;
+  place-self: center;
+  width: 40%;
+  padding-right: 50px;
+  padding-bottom: -100px;
+}
+
   }

@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Maria Alejandra Duffy">
     <meta name="description" content="Temple Chamber of Commerce Website">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Temple Chamber of Commerce | Directory</title>
   </head>
 
@@ -32,15 +33,13 @@
     <main>
       <h1 class="title">Directory</h1>
 
-      <select id="myselection" onchange="change_myselection(this.value)">
-        <option value="">SELECT VIEW:</option>
-        <option value="grid">List View</option>
-        <option value="list">Grid View</option>
-      
-      </select>
-
-      <div id="directoryid"></div>
-      
+      <div id="viewWrapper">
+        <button class="selectView" onclick="listButton()"><i class="fa fa-bars"></i> List</button> 
+        <div id="directoryWrapper"></div>
+        <button class="selectView active" onclick="gridButton()"><i class="fa fa-th-large"></i> Grid</button>
+        <div id="directoryContent">
+        </div>
+      </div>
 
     </main>
 

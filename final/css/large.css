@@ -52,42 +52,7 @@
 
     /* Directory*/
 
-     
-     .links {
-       margin-bottom: 1em;
-       padding: 15px;
-       border-radius: 3px;
-     }
-
-     .links ul {
-       display: flex;
-       justify-content: center;
-     }
-
-     .links ul li {
-       margin: 0 15px;
-       font-weight: 700;
-       text-transform: uppercase;
-       font-size: 20px;
-       letter-spacing: 3px;
-       cursor: pointer;
-     }
-
-     .links ul li:hover {
-       color: green;
-     }
-
-     .links ul li:active {
-       color: yellow;
-     }
-
-     .list-view .view-item {
-       border: 1px solid black;
-       margin: 10px;
-       padding: 10px;
-       align-items: center;
-     }
-
+    
   
     
     /* Contact Page */
@@ -108,8 +73,5 @@
       .board-col-3 {
         grid-column: 3/4;
       }
-
-     
-
     
   }  

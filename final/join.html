@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Maria Alejandra Duffy">
     <meta name="description" content="Temple Chamber of Commerce Website">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -95,12 +95,37 @@
             <input id= "business-address" type="text" placeholder="123 Temple Ave" name="business-address">
 
             <label for="business-website">Business website:</label>
-            <input id= "business-website" type="text" placeholder="temple.com" name="business-website">
+            <input id= "business-website" type="url" placeholder="https://temple.com" pattern="https://.*" name="business-website">
 
             <label for="business-description">Business description:</label>
             <input id="business-description" type="text" placeholder="What your business is about" name="business-description">
 
             <label for="levels">Membership level:</label>
+            <details><summary>Non-profit</summary>
+              <li>Access to valuable resources, including the chamber's membership directory</li>
+              <li>Participate in meet and greets and networking lunches</li>
+              <li>Develop mutually beneficial marketing strategies</li>
+            </details>
+
+            <details><summary>Bronze</summary>
+              <li>All the benefits of joining as a non-profit member</li>
+              <li>Discounts for tuition, insurance, office supplies, and more</li>
+              <li>Have access to speak at events where you promote your business</li>
+            </details>
+
+            <details><summary>Silver</summary>
+              <li>All the benefits of joining as a bronze member </li>
+              <li>Have your business published on our website, newsletters, and social media pages</li>
+              <li>Enjoy sponsorship for events or fundraisers</li>
+            </details>
+
+            <details><summary>Gold</summary>
+              <li>All the benefits of joining as a silver member</li>
+              <li>Use our facilities to hold your events</li>
+              <li>Access to business loans</li>
+              <li>Receive physical and cybersecurity</li>
+            </details>
+
             <select name="levels" id="levels" multiple>
               <option value="non-profit">Non-profit: $100</option>
               <option value="bronze">Bronze: $200</option>

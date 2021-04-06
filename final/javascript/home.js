@@ -33,19 +33,8 @@ fetch("https://api.openweathermap.org/data/2.5/weather?lat=31.105862&lon=-97.353
 
   document.getElementById('city').textContent = obj.name;
   document.getElementById('condition').textContent = obj.weather[0].description;
-  document.getElementById('temp').textContent = obj.main.temp + " °F";
+  document.getElementById('temp').textContent = Math.round(obj.main.temp)+ " °F";
   document.getElementById('humidity').textContent = obj.main.humidity + " %";
-
-});
-
-// Three Day Forecast
-fetch("https://api.openweathermap.org/data/2.5/forecast?lat=31.105862&lon=-97.353287&appid=d3860fdc94ef1e7570d2672151dd4ef7")
-
-.then(function (response) {
-  return response.json();
-})
-
-.then(function (forecastObj) {
 
 });
 
@@ -71,4 +60,58 @@ for(var i=0;i<events.homeEvents.length;i++) {
   getId.innerHTML += '<p class="phone">' +events.homeEvents[i].thirdEvent + '</p>';
 }
 
-// from list to grid
+// Three Day Forecast
+
+fetch("https://api.openweathermap.org/data/2.5/forecast?lat=31.105862&lon=-97.353287&appid=d3860fdc94ef1e7570d2672151dd4ef7")
+   
+.then(function (response) {
+    return response.json();
+  })
+
+.then(function (object) {
+    
+  console.log(object);
+  const data = object.list.filter((help)=>help.dt_txt.includes('18:00:00'));
+
+  console.log(data);
+
+  // set days
+
+  var days = new Array(7);
+
+  days[0] = "Sunday";
+  days[1] = "Monday";
+  days[2] = "Tuesday";
+  days[3] = "Wednesday";
+  days[4] = "Thursday";
+  days[5] = "Friday";
+  days[6] = "Saturday";
+
+   let d = 0;
+
+   data.forEach(dForecast => {
+     
+    let get = new Date(dForecast.dt_txt);
+
+    // set date
+
+    document.getElementById('date'+(d+1)).textContent = days[get.getDay()]; 
+
+    // set icon images
+
+    document.getElementById('icon'+(d+1)).src = "https://openweathermap.org/img/w/" + dForecast.weather[0].icon + ".png";
+    document.getElementById('icon'+(d+1)).alt = dForecast.weather[0].description;
+
+
+    // set temperature
+
+    document.getElementById('temperature'+(d+1)).textContent = 'Temp ' + Math.round(dForecast.main.temp) + ' °F';
+    document.getElementById('maxTemp'+(d+1)).textContent = 'High ' + dForecast.main.temp_max + ' °F';
+    document.getElementById('minTemp'+(d+1)).textContent = 'Low ' +dForecast.main.temp_min + ' °F';
+
+    // set next days
+
+    d++;	
+  });
+});
+
