@@ -206,8 +206,6 @@ body {
     margin: 1em;
   }
 
-
-
   #forecast p, #forecast h3{
     text-align: center;
     color: #020122;
@@ -223,6 +221,16 @@ body {
 
   #icon1, #icon2, #icon3 {
     width: 30%;
+  }
+
+  button[type="button"] {
+    background-color: white;
+    border: 2px solid white;
+    color: #020122;
+    border-radius: 2px;
+    padding: 10px 20px;
+    font-size: 0.9em;
+    padding: 10px;
   }
   
   
@@ -254,6 +262,14 @@ body {
     padding-bottom: 8px;
   }
 
+  .copyright a {
+    color: #020122;
+  }
+  
+  .copyright {
+    font-size: 0.8em;
+    padding-top: 1.5em;
+  }
 
 /* Contact Page */
 
@@ -306,6 +322,10 @@ button[type="submit"] {
   padding: 10px 20px;
   font-size: 0.9em;
   text-transform: uppercase;
+}
+
+button {
+  cursor: pointer;
 }
 
 .the-board p, .the-board h3 {
@@ -388,6 +408,7 @@ fieldset {
 
 button:hover {
  background-color: green;
+ color: white;
 }
 
 button {

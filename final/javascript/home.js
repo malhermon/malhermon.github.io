@@ -19,6 +19,7 @@ function showDate() {
 var myDate = document.getElementById("currentDate");
 myDate.textContent = "Today: " +dayarray[day]+ " " + daym+ " " +montharray[month]+ " " +year;
 myDate.innerText= "Today: " +dayarray[day]+ " " + daym+ " " +montharray[month]+ " " +year;
+document.getElementById('currentYear').innerHTML = year;
 }
 
 showDate();
