@@ -82,11 +82,11 @@ for(var i=0;i<obj.business.length;i++) {
     getId.innerHTML += '<img class="logo" src="' + obj.business[i].logo + '" " />';
 
   }
-  };
+  }
 
   var gridId = document.getElementById('directoryContent');
 
-function gridButton() {
+  function gridButton() {
 
   for(var i=0;i<obj.business.length;i++) {
    
@@ -96,4 +96,4 @@ function gridButton() {
     gridId.innerHTML += '<p class="businessPhone">Phone number: ' +obj.business[i].phone + '</p>';
     gridId.innerHTML += '<p class="businessWebsite">Website: ' +obj.business[i].website + '</p>';
     gridId.innerHTML += '<img class="logo" src="' + obj.business[i].logo + '" " />';
-    }};
+    }}
