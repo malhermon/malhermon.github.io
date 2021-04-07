@@ -67,37 +67,33 @@ var obj = {
 
 };
 
+var gridId = document.getElementById('directoryContent');
+
+function gridButton() {
+
+  for(var i=0;i<obj.business.length;i++) {
+   
+    gridId.innerHTML += '<h3 class="businessName">' +obj.business[i].name + '</h3>';
+    gridId.innerHTML += '<p class="businessAdress">Address: ' +obj.business[i].address + '</p>';
+    gridId.innerHTML += '<p class="businessMember">Member: ' +obj.business[i].member + '</p>';
+    gridId.innerHTML += '<p class="businessPhone">Phone number: ' +obj.business[i].phone + '</p>';
+    gridId.innerHTML += '<p class="businessWebsite">Website: ' +obj.business[i].website + '</p>';
+    gridId.innerHTML += '<img class="logo" src="' + obj.business[i].logo + '" " />';
+    }};
+
+    
 var getId = document.getElementById('directoryWrapper');
 
 function listButton() {
 
 for(var i=0;i<obj.business.length;i++) {
- 
-  getId.innerHTML += '<h3>' +obj.business[i].name + '</h3>';
-  getId.innerHTML += '<p class="directory-address">Address: ' +obj.business[i].address + '</p>';
-  getId.innerHTML += '<p class="directory-member">Member: ' +obj.business[i].member + '</p>';
-  getId.innerHTML += '<p class="directory-phone">Phone number: ' +obj.business[i].phone + '</p>';
-  getId.innerHTML += '<p class="directory-website">Website: ' +obj.business[i].website + '</p>';
-  getId.innerHTML += '<img class="logo" src="' + obj.business[i].logo + '" " />';
+  
+    getId.innerHTML += '<h3 class="businessName">' +obj.business[i].name + '</h3>';
+    getId.innerHTML += '<p class="businessAdress">Address: ' +obj.business[i].address + '</p>';
+    getId.innerHTML += '<p class="businessMember">Member: ' +obj.business[i].member + '</p>';
+    getId.innerHTML += '<p class="businessPhone">Phone number: ' +obj.business[i].phone + '</p>';
+    getId.innerHTML += '<p class="businessWebsite">Website: ' +obj.business[i].website + '</p>';
+    getId.innerHTML += '<img class="logo" src="' + obj.business[i].logo + '" " />';
+
   }
   };
-
-  var gridId = document.getElementById('directoryContent');
-
-  function gridButton() {
-
-    for(var i=0;i<obj.business.length;i++) {
-     
-      gridId.innerHTML += '<h3>' +obj.business[i].name + '</h3>' +  '<p class="directory-address-grid">Address: ' +obj.business[i].address + '</p>';
-      gridId.innerHTML += '<p class="directory-member-grid">Member: ' +obj.business[i].member + '</p>';
-      gridId.innerHTML += '<p class="directory-phone-grid">Phone number: ' +obj.business[i].phone + '</p>';
-      gridId.innerHTML += '<p class="directory-website-grid">Website: ' +obj.business[i].website + '</p>';
-      gridId.innerHTML += '<img class="logo" src="' + obj.business[i].logo + '" " />';
-      }
-      
-      }
-  
-  
-  ;
-
-
