@@ -74,8 +74,9 @@
       <div class="membership-form">
         <form action="confirmation.html">
           <div class="wrapper">
-            <h2>Membership Form</h2>
+            <h2>Join</h2>
             <fieldset>
+              <legend>Membership Form</legend>
             <label for="full-name">First and last name:</label>
             <input id="full-name" type="text" placeholder="Jane Doe" name="full-name" required>
 
@@ -102,28 +103,36 @@
 
             <label for="levels">Membership level:</label>
             <details><summary>Non-profit</summary>
+              <ul>
               <li>Access to valuable resources, including the chamber's membership directory</li>
               <li>Participate in meet and greets and networking lunches</li>
               <li>Develop mutually beneficial marketing strategies</li>
+            </ul>
             </details>
 
             <details><summary>Bronze</summary>
+              <ul>
               <li>All the benefits of joining as a non-profit member</li>
               <li>Discounts for tuition, insurance, office supplies, and more</li>
               <li>Have access to speak at events where you promote your business</li>
+            </ul>
             </details>
 
             <details><summary>Silver</summary>
+              <ul>
               <li>All the benefits of joining as a bronze member </li>
               <li>Have your business published on our website, newsletters, and social media pages</li>
               <li>Enjoy sponsorship for events or fundraisers</li>
+            </ul>
             </details>
 
             <details><summary>Gold</summary>
+              <ul>
               <li>All the benefits of joining as a silver member</li>
               <li>Use our facilities to hold your events</li>
               <li>Access to business loans</li>
               <li>Receive physical and cybersecurity</li>
+            </ul>
             </details>
 
             <select name="levels" id="levels" multiple>
@@ -133,8 +142,8 @@
               <option value="gold">Gold: $1000</option>
             </select>
             <button type="submit" class="signup">Join</button>
-          </div>
-        </fieldset>
+          </fieldset>
+          </div> 
         </form>
       </div>
 
