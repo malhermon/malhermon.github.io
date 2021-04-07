@@ -216,24 +216,12 @@ grid-template-columns: 1fr 1fr;
 padding: 10px;
 }
 
-#directoryContent h3 {
-padding-top: 1em;
-}
-
-#directoryContent .businessAddress {
-padding-top: -2em;
-}
-
-#directoryContent p {
-grid-column: 1/2;
+.businessAddress{
+  padding-top: 20px;
 }
 
 #directoryContent .logo {
-grid-column: 2/3;
-place-self: center;
-width: 40%;
-padding-right: 50px;
-padding-bottom: -100px;
+  padding-bottom: 2em;
 }
 
 }

@@ -67,20 +67,6 @@ var obj = {
 
 };
 
-var gridId = document.getElementById('directoryContent');
-
-function gridButton() {
-
-  for(var i=0;i<obj.business.length;i++) {
-   
-    gridId.innerHTML += '<h3 class="businessName">' +obj.business[i].name + '</h3>';
-    gridId.innerHTML += '<p class="businessAdress">Address: ' +obj.business[i].address + '</p>';
-    gridId.innerHTML += '<p class="businessMember">Member: ' +obj.business[i].member + '</p>';
-    gridId.innerHTML += '<p class="businessPhone">Phone number: ' +obj.business[i].phone + '</p>';
-    gridId.innerHTML += '<p class="businessWebsite">Website: ' +obj.business[i].website + '</p>';
-    gridId.innerHTML += '<img class="logo" src="' + obj.business[i].logo + '" " />';
-    }};
-
     
 var getId = document.getElementById('directoryWrapper');
 
@@ -89,7 +75,7 @@ function listButton() {
 for(var i=0;i<obj.business.length;i++) {
   
     getId.innerHTML += '<h3 class="businessName">' +obj.business[i].name + '</h3>';
-    getId.innerHTML += '<p class="businessAdress">Address: ' +obj.business[i].address + '</p>';
+    getId.innerHTML += '<p class="businessAddress">Address: ' +obj.business[i].address + '</p>';
     getId.innerHTML += '<p class="businessMember">Member: ' +obj.business[i].member + '</p>';
     getId.innerHTML += '<p class="businessPhone">Phone number: ' +obj.business[i].phone + '</p>';
     getId.innerHTML += '<p class="businessWebsite">Website: ' +obj.business[i].website + '</p>';
@@ -97,3 +83,17 @@ for(var i=0;i<obj.business.length;i++) {
 
   }
   };
+
+  var gridId = document.getElementById('directoryContent');
+
+function gridButton() {
+
+  for(var i=0;i<obj.business.length;i++) {
+   
+    gridId.innerHTML += '<h3 class="businessName">' +obj.business[i].name + '</h3>';
+    gridId.innerHTML += '<p class="businessAddress">Address: ' +obj.business[i].address + '</p>';
+    gridId.innerHTML += '<p class="businessMember">Member: ' +obj.business[i].member + '</p>';
+    gridId.innerHTML += '<p class="businessPhone">Phone number: ' +obj.business[i].phone + '</p>';
+    gridId.innerHTML += '<p class="businessWebsite">Website: ' +obj.business[i].website + '</p>';
+    gridId.innerHTML += '<img class="logo" src="' + obj.business[i].logo + '" " />';
+    }};
