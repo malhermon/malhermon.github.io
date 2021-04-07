@@ -25,7 +25,7 @@ document.getElementById('currentYear').innerHTML = year;
 showDate();
 
 // Weather Summary
-fetch("https://api.openweathermap.org/data/2.5/weather?lat=31.105862&lon=-97.353287&appid=d3860fdc94ef1e7570d2672151dd4ef7")
+fetch("https://api.openweathermap.org/data/2.5/weather?lat=31.105862&units=imperial&lon=-97.353287&appid=d3860fdc94ef1e7570d2672151dd4ef7")
 
 .then(function (response) {
 return response.json();
@@ -63,7 +63,7 @@ getId.innerHTML += '<p class="phone">' +events.homeEvents[i].thirdEvent + '</p>'
 
 // Three Day Forecast
 
-fetch("https://api.openweathermap.org/data/2.5/forecast?lat=31.0982&lon=-97.3428&appid=d3860fdc94ef1e7570d2672151dd4ef7")
+fetch("https://api.openweathermap.org/data/2.5/forecast?lat=31.0982&lon=-97.3428&units=imperial&appid=d3860fdc94ef1e7570d2672151dd4ef7")
  
 .then(function (response) {
   return response.json();
