@@ -62,7 +62,7 @@ for(var i=0;i<events.homeEvents.length;i++) {
 
 // Three Day Forecast
 
-fetch("https://api.openweathermap.org/data/2.5/forecast?lat=31.105862&lon=-97.353287&appid=d3860fdc94ef1e7570d2672151dd4ef7")
+fetch("https://api.openweathermap.org/data/2.5/forecast?lat=31.0982&lon=-97.3428&appid=d3860fdc94ef1e7570d2672151dd4ef7")
    
 .then(function (response) {
     return response.json();
